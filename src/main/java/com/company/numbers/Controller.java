@@ -31,6 +31,7 @@ public class Controller {
     }
 
     public Numbers getNumbersObject(String numbers) {
+        //returns List<Integer> of numbers from input string
         var numbersList = Arrays.asList(numbers.split(","))
                 .stream()
                 .map(str -> Integer.parseInt(str))
@@ -55,7 +56,7 @@ public class Controller {
         } catch (IndexOutOfBoundsException e) {
         }
 
-        //thirdloop
+        //third loop
         var numInterator = numbersList.iterator();
         int num;
         while(numInterator.hasNext()) {
